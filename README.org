@@ -1,0 +1,18 @@
+#+Title: CPS305 - Programming Utilities
+
+This repository contains the basic programming utilities needed for the CPS305 - Data Structures course
+
+* Installation
+
+** Portacle users
+
+Clone this repository in the ~portacle/projects/~ directory:
+
+#+begin_src shell
+$ git clone
+#+end_src
+
+
+
+
+
