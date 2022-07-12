@@ -173,7 +173,7 @@ Lab keys are of the form ':labXX', where XX is the lab number. E.g., :lab01"
     (pprint-tc-bdy (cdr bdy))))
             
 (defun show-test-cases (lab &optional (function nil))
-  "Pretty prints the test cases associated with lab key"
+  "Pretty prints the test cases associated with lab key and the function"
   (setf *test-cases* nil)
   (run-tests lab)
   (if function
