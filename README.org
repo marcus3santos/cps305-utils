@@ -9,7 +9,7 @@ This repository contains the basic programming utilities needed for the CPS305 -
 Clone this repository in the ~portacle/projects/~ directory:
 
 #+begin_src shell
-$ git clone https://github.com/marcus3santos/cps305-utils.git
+git clone https://github.com/marcus3santos/cps305-utils.git
 #+end_src
 
 * Modifying labs
