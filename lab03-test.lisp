@@ -62,14 +62,6 @@
 	     (setf *db* (make-array *size*  :initial-element nil))
 	     (add-movie (make-movie :title "Test1"))
 	     (add-movie (make-movie :title "Test2"))
-	     (add-movie (make-movie :title "Test3"))
-	     (replace-movie (make-movie :title "Test2") (make-movie :title "Test3")))
-	   NIL)
-    (equal (progn
-	     (setf *size* 3)
-	     (setf *db* (make-array *size*  :initial-element nil))
-	     (add-movie (make-movie :title "Test1"))
-	     (add-movie (make-movie :title "Test2"))
 	     (replace-movie (make-movie :title "Test3") (make-movie :title "Test4")))
 	   NIL)))
 	     
