@@ -158,7 +158,7 @@ Lab keys are of the form ':labXX', where XX is the lab number. E.g., :lab01"
 (defun pprint-assertions (al)
   (when al
     (let ((a (car al)))
-      (cond ((= (length a) 3) (format t "    ~S should return ==> ~a~%" (second a) (third a)))
+      (cond ((= (length a) 3) (format t "    ~S should return ==> ~S~%" (second a) (third a)))
             ((eql (car a) 'not) (format t "    ~S should return ==> NIL~%" (second a)))
             (t (format t "    ~S should return ==> T~%" (car a)))))
     (pprint-assertions (cdr al))))
