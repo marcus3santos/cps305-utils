@@ -114,7 +114,20 @@ the mark is calculated as the # of passes divided by the total # of cases.
       (:lab08 (load (merge-pathnames utils-dir "lab08-test.lisp")))
       (:lab09 (load (merge-pathnames utils-dir "lab09-test.lisp")))
       (otherwise (format t "Invalid lab identifier. Lab identifiers are in the form :labXX, where XX is the lab number, e.g., :lab03.")))))
-      
+ 
+(defun run-tests (lab)
+  (case lab
+    (:lab01 (test-lab01))
+    (:lab02 (test-lab02))
+    (:lab03 (test-lab03))
+    (:lab04 (test-lab04))
+    (:lab05 (test-lab05))
+    (:lab06 (test-lab06))
+    (:lab07 (test-lab07))
+    (:lab08 (test-lab08))
+    (:lab09 (test-lab09))
+    (otherwise (format t "Invalid lab identifier. Lab identifiers are in the form :labXX, where XX is the lab number, e.g., :lab03."))))
+     
 
 (defun clear-cr (file)
   "Gets rid of CR characters in file creating new file."
