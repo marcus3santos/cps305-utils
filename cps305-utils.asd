@@ -6,7 +6,7 @@
   :license  "Specify license here"
   :version "0.0.1"
   :serial t
-  ; :depends-on (#:rutils)
+  :depends-on (#:rutils)
   :components ((:file "package")
                (:file "utils")
                (:file "lab01-test")
